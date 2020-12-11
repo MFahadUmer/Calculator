@@ -1,3 +1,7 @@
+*{
+  font-family: "Liberation Mono";
+}
+
 .mainSection {
   margin: 0 auto;
   width: 500px;
@@ -12,15 +16,22 @@
 }
 
 .title {
-  font-family: "Liberation Mono";
   font-weight: bolder;
   font-size: 24px;
 }
 
 .message {
-  font-family: "Liberation Mono";
   text-align: center;
   font-size: 12px;
   font-weight: bold;
   padding: 15px;
+}
+
+.milestone {
+  color: white;
+  font-size: 14px;
+  background-color: blue;
+  font-weight: bolder;
+  padding: 20px 10px;
+  border-radius: 10px;
 }
