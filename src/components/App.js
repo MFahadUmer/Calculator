@@ -1,5 +1,13 @@
 import React from 'react';
+import Button from './Button';
 
-const App = () => <h2>Hey World</h2>;
+function App() {
+  const name = 'Muhammad';
+  return (
+    <div>
+      <Button name={name} />
+    </div>
+  );
+}
 
 export default App;
