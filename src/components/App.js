@@ -1,11 +1,10 @@
 import React from 'react';
-import Button from './Button';
+import ButtonPanel from './ButtonPanel';
 
 function App() {
-  const name = 'Muhammad';
   return (
     <div>
-      <Button name={name} />
+      <ButtonPanel />
     </div>
   );
 }
