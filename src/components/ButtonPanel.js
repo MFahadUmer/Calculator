@@ -2,12 +2,47 @@ import React from 'react';
 import Button from './Button';
 
 const ButtonPanel = () => {
-  const symbols = ['AC', '+/-', '%', '/', '7', '8', '9', 'x', '4', '5', '6', '-', '1', '2', '3', '+', '0', '0', '='];
-  // eslint-disable-next-line react/no-array-index-key
-  const calculatorSymbols = symbols.map((x, idx) => <Button key={idx} value={x} />);
+  const buttonGroups = {
+    groupOne: {
+      id: 1,
+      group: ['AC', '+/-', '%', '/'],
+    },
+    groupTwo: {
+      id: 2,
+      group: ['7', '8', '9', 'X'],
+    },
+    groupThree: {
+      id: 3,
+      group: ['4', '5', '6', '-'],
+    },
+    groupFour: {
+      id: 4,
+      group: ['0', '.', '='],
+    },
+  };
+
   return (
-    <div className="buttonPanel">
-      {calculatorSymbols}
+    <div>
+      <div className="buttonPanel">
+        {buttonGroups.groupOne.group.map(button => (
+          <Button value={button} key={buttonGroups.groupOne.id} />
+        ))}
+      </div>
+      <div className="buttonPanel">
+        {buttonGroups.groupTwo.group.map(button => (
+          <Button value={button} key={buttonGroups.groupOne.id} />
+        ))}
+      </div>
+      <div className="buttonPanel">
+        {buttonGroups.groupThree.group.map(button => (
+          <Button value={button} key={buttonGroups.groupOne.id} />
+        ))}
+      </div>
+      <div className="buttonPanel">
+        {buttonGroups.groupFour.group.map(button => (
+          <Button value={button} key={buttonGroups.groupOne.id} />
+        ))}
+      </div>
     </div>
   );
 };

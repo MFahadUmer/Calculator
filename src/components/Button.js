@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Button = ({ value }) => (
-  <button className={value === '=' ? 'equalButton' : 'button'} type="submit">
+  <button className="button" type="submit">
     {value}
   </button>
 );
