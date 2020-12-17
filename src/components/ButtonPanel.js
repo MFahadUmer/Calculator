@@ -17,6 +17,10 @@ const ButtonPanel = () => {
     },
     groupFour: {
       id: 4,
+      group: ['1', '2', '3', '+'],
+    },
+    groupFive: {
+      id: 5,
       group: ['0', '.', '='],
     },
   };
@@ -25,22 +29,27 @@ const ButtonPanel = () => {
     <div>
       <div className="buttonPanel">
         {buttonGroups.groupOne.group.map(button => (
-          <Button value={button} key={buttonGroups.groupOne.id} />
+          <Button value={button} key={button} />
         ))}
       </div>
       <div className="buttonPanel">
         {buttonGroups.groupTwo.group.map(button => (
-          <Button value={button} key={buttonGroups.groupOne.id} />
+          <Button value={button} key={button} />
         ))}
       </div>
       <div className="buttonPanel">
         {buttonGroups.groupThree.group.map(button => (
-          <Button value={button} key={buttonGroups.groupOne.id} />
+          <Button value={button} key={button} />
         ))}
       </div>
       <div className="buttonPanel">
         {buttonGroups.groupFour.group.map(button => (
-          <Button value={button} key={buttonGroups.groupOne.id} />
+          <Button value={button} key={button} />
+        ))}
+      </div>
+      <div className="buttonPanel">
+        {buttonGroups.groupFive.group.map(button => (
+          <Button value={button} key={button} />
         ))}
       </div>
     </div>
