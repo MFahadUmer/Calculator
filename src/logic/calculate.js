@@ -7,12 +7,6 @@ const calculate = (dataObject, buttonName) => {
     total = null;
     next = null;
     operation = null;
-  } else if (buttonName === 'DEL') {
-    if (next) {
-      next = null;
-    } else if (total) {
-      total = null;
-    }
   } else if (buttonName === '=') {
     if (total && next && operation) {
       total = operate(total, next, operation);
