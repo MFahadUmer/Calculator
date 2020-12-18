@@ -9,7 +9,7 @@ const App = () => {
     next: 56,
     operation: 'X',
   };
-  const buttonName = '+/-';
+  const buttonName = '-';
   return (
     <div className="calculator">
       <Display />

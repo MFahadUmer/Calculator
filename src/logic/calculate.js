@@ -1,3 +1,5 @@
+import operate from './operate';
+
 const calculate = (dataObject, buttonName) => {
   let { total, next, operation } = dataObject;
   const buttonOperations = ['+', '-', 'X', '/', '%'];
@@ -11,6 +13,7 @@ const calculate = (dataObject, buttonName) => {
   buttonOperations.forEach(value => {
     if (buttonName === value) {
       operation = value;
+      total = operate(total, operation, next);
     }
   });
   return { total, next, operation };
