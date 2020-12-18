@@ -2,7 +2,7 @@ import operate from './operate';
 
 const calculate = (dataObject, buttonName) => {
   let { total, next, operation } = dataObject;
-  const buttonOperations = ['+', '-', 'X', '/', '%'];
+  const buttonOperations = ['+', '-', 'X', '/', '%', '+/-'];
   if (buttonName === 'AC') {
     total = null;
     next = null;
@@ -30,7 +30,7 @@ const calculate = (dataObject, buttonName) => {
       } else {
         operation = buttonName;
       }
-    } else if (buttonName === '=/*') {
+    } else if (buttonName === '+/-') {
       if (next) {
         next = operate(next, '-1', 'X');
       } else if (total) {

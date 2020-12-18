@@ -13,7 +13,7 @@ const operate = (numberOne, numberTwo, operation) => {
   } else if (operation === '/') {
     result = numberOneBig / numberTwoBig;
   } else if (operation === '%') {
-    result = (numberOneBig / numberTwoBig) * 100;
+    result = numberOneBig.mod(numberTwoBig) * 100;
   }
   return result;
 };
