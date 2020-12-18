@@ -5,23 +5,23 @@ const ButtonPanel = () => {
   const buttonGroups = {
     groupOne: {
       id: 1,
-      group: ['AC', '+/-', '%', '/'],
+      group: ['AC', '+/-', 'DEL', '%'],
     },
     groupTwo: {
       id: 2,
-      group: ['7', '8', '9', 'X'],
+      group: ['7', '8', '9', '/'],
     },
     groupThree: {
       id: 3,
-      group: ['4', '5', '6', '-'],
+      group: ['4', '5', '6', 'X'],
     },
     groupFour: {
       id: 4,
-      group: ['1', '2', '3', '+'],
+      group: ['1', '2', '3', '-'],
     },
     groupFive: {
       id: 5,
-      group: ['0', '.', '='],
+      group: ['0', '.', '=', '+'],
     },
   };
 
