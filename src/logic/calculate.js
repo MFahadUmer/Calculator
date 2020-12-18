@@ -20,6 +20,10 @@ const calculate = (dataObject, buttonName) => {
       operation = null;
     } else if (buttonOperations.includes(buttonName)) {
       if (total && next && operation) {
+        if (buttonName === '+/-') {
+          total = operate(total, '-1', 'X');
+          next = operate(next, '-1', 'X');
+        }
         total = operate(total, next, operation);
         operation = buttonName;
         next = null;
