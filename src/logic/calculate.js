@@ -36,6 +36,12 @@ const calculate = (dataObject, buttonName) => {
       } else if (total) {
         total = operate(total, '-1', 'X');
       }
+    } else if (buttonName === '.') {
+      if (next) {
+        next = next.concat(buttonName);
+      } else if (total) {
+        total = total.concat(buttonName);
+      }
     }
   }
   return { total, next, operation };
