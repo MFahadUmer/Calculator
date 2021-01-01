@@ -41,6 +41,12 @@ const calculate = (dataObject, buttonName) => {
         total = total.concat(buttonName);
       }
     }
+  } else {
+    if (operation === '') {
+      total = total.concat(buttonName);
+    } else {
+      next = next.concat(buttonName);
+    }
   }
   return { total, next, operation };
 };
