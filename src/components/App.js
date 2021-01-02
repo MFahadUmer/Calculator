@@ -7,11 +7,8 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      // eslint-disable-next-line react/no-unused-state
       total: '',
-      // eslint-disable-next-line react/no-unused-state
       next: '',
-      // eslint-disable-next-line react/no-unused-state
       operation: '',
     };
     this.handleClick = this.handleClick.bind(this);
@@ -21,20 +18,24 @@ class App extends Component {
     const data = this.state;
     const result = calculate(data, buttonName);
     this.setState({
-      // eslint-disable-next-line react/no-unused-state
       total: result.total,
-      // eslint-disable-next-line react/no-unused-state
       next: result.next,
-      // eslint-disable-next-line react/no-unused-state
       operation: result.operation,
     });
     console.log(this.state);
   }
 
   render() {
+    const { total, next, operation } = this.state;
+    let value = '0';
+    if (operation === '' && total !== '') {
+      value = total;
+    } else if (next !== '') {
+      value = next;
+    }
     return (
       <div className="calculator">
-        <Display />
+        <Display calculate={value} />
         <ButtonPanel clickHandler={this.handleClick} />
       </div>
     );

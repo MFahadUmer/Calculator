@@ -1,18 +1,19 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Display = ({ calulate }) => (
+const Display = ({ calculate }) => (
   <div className="display">
-    <p className="calculateText">{ calulate }</p>
+    {console.log(calculate)}
+    <p className="calculateText">{ calculate }</p>
   </div>
 );
 
 Display.propTypes = {
-  calulate: PropTypes.string,
+  calculate: PropTypes.string,
 };
 
 Display.defaultProps = {
-  calulate: '0',
+  calculate: '0',
 };
 
 export default Display;
