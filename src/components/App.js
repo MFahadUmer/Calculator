@@ -22,7 +22,6 @@ class App extends Component {
       next: result.next,
       operation: result.operation,
     });
-    console.log(this.state);
   }
 
   render() {
