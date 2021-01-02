@@ -55,7 +55,6 @@ const calculate = (dataObject, buttonName) => {
   } else if (/^[0-9]+$/.test(buttonName)) {
     if (operation === '') {
       if (total[0] === '0' && buttonName === '0' && total[1] !== '.') {
-        console.log(total);
         total = '';
       } else {
         total = total.concat(buttonName);
