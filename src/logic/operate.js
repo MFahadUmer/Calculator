@@ -12,8 +12,6 @@ const operate = (numberOne, numberTwo, operation) => {
     result = numberOneBig * numberTwoBig;
   } else if (operation === '/') {
     result = numberOneBig / numberTwoBig;
-  } else if (operation === '%') {
-    result = (numberOneBig / numberTwoBig) * 100;
   }
   return result.toString();
 };

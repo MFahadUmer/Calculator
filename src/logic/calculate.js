@@ -2,7 +2,7 @@ import operate from './operate';
 
 const calculate = (dataObject, buttonName) => {
   let { total, next, operation } = dataObject;
-  const buttonOperations = ['+', '-', 'X', '/', '%', '+/-'];
+  const buttonOperations = ['+', '-', 'X', '/', '+/-'];
   if (buttonName === 'AC') {
     total = '';
     next = '';
@@ -45,6 +45,12 @@ const calculate = (dataObject, buttonName) => {
       total = total.concat(buttonName);
     } else if (total !== '' && !total.includes(buttonName)) {
       total = total.concat(buttonName);
+    }
+  } else if (buttonName === '%') {
+    if (next) {
+      next = (next / 100).toString();
+    } else if (total) {
+      total = (total / 100).toString();
     }
   } else if (/^[0-9]+$/.test(buttonName)) {
     if (operation === '') {
