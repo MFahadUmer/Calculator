@@ -4,8 +4,8 @@ import Display from './Display';
 import calculate from '../logic/calculate';
 
 class App extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       total: '',
       next: '',
