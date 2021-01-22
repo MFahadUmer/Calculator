@@ -4,6 +4,8 @@
   padding: 0;
 }
 
+@import url(navbar.css);
+
 .calculator {
   width: 460px;
   background-color: gray;
