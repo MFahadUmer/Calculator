@@ -1,11 +1,12 @@
+@import url(navbar.css);
+@import url(home.css);
+@import url(quote.css);
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-
-@import url(navbar.css);
-@import url(home.css);
 
 .mainContainer {
   width: 100vw;
