@@ -1,3 +1,16 @@
+.calculatorContainer {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
 .calculator {
   width: 700px;
+}
+
+.appText {
+  font-weight: bold;
+  font-size: 20px;
+  margin-left: 22px;
 }
