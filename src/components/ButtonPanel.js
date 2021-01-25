@@ -30,7 +30,11 @@ const ButtonPanel = ({ clickHandler }) => {
     <div>
       <div className="buttonPanel">
         {buttonGroups.groupOne.group.map(button => (
-          <Button value={button} key={button} handleClick={() => clickHandler(button)} />
+          <Button
+            value={button}
+            key={button}
+            handleClick={() => clickHandler(button)}
+          />
         ))}
       </div>
       <div className="buttonPanel">
@@ -50,7 +54,12 @@ const ButtonPanel = ({ clickHandler }) => {
       </div>
       <div className="buttonPanel">
         {buttonGroups.groupFive.group.map(button => (
-          <Button value={button} key={button} handleClick={() => clickHandler(button)} />
+          <Button
+            wide
+            value={button}
+            key={button}
+            handleClick={() => clickHandler(button)}
+          />
         ))}
       </div>
     </div>

@@ -3,6 +3,8 @@
 @import url(quote.css);
 @import url(app.css);
 @import url(display.css);
+@import url(buttonPanel.css);
+@import url(button.css);
 
 * {
   box-sizing: border-box;
