@@ -2,6 +2,7 @@
 @import url(home.css);
 @import url(quote.css);
 @import url(app.css);
+@import url(display.css);
 
 * {
   box-sizing: border-box;
