@@ -35,7 +35,7 @@ class App extends Component {
     return (
       <div className="calculatorContainer">
         <div>
-          <p className="appText">Let’s do some math!</p>
+          <p id="appText" className="appText">Let’s do some math!</p>
         </div>
         <div className="calculator">
           <Display calculate={value} />
