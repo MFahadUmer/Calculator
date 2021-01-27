@@ -1,22 +1,40 @@
 import React from 'react';
-import { render, screen } from '@testing-library/react';
+import { render, screen, fireEvent } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import App from './App';
 // import renderer from 'react-test-renderer';
 
-describe('Timeline', () => {
-  it('App renders text Lets do some math', () => {
+describe('Calculator Functionality Test', () => {
+  it('should renders text Lets do some math', () => {
     render(<App />);
     expect(screen.getByText('Let’s do some math!')).toBeTruthy();
   });
 
-  it('App renders button with text 9', () => {
+  it('should renders button with text 9', () => {
     render(<App />);
     expect(screen.getByText('9')).toBeTruthy();
   });
 
-  it('App renders button with text 5', () => {
+  it('should renders button with text 5', () => {
     render(<App />);
     expect(screen.getByText('5')).toBeTruthy();
+  });
+
+  it('should display the addition of 7 and 8', () => {
+    render(<App />);
+    fireEvent.click(screen.getByText('7'));
+    fireEvent.click(screen.getByText('+'));
+    fireEvent.click(screen.getByText('8'));
+    fireEvent.click(screen.getByText('='));
+    expect(screen.getByText('15')).toBeTruthy();
+  });
+
+  it('should display the multiplication of 8 and 7', () => {
+    render(<App />);
+    fireEvent.click(screen.getByText('8'));
+    fireEvent.click(screen.getByText('X'));
+    fireEvent.click(screen.getByText('7'));
+    fireEvent.click(screen.getByText('='));
+    expect(screen.getByText('56')).toBeTruthy();
   });
 });
