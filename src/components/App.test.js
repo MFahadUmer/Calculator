@@ -38,7 +38,8 @@ describe('Calculator Functionality Test', () => {
     expect(screen.getByText('56')).toBeTruthy();
   });
 
-  it('matches the snapshot', () => {
+  it('matches the app component snapshot', () => {
     const tree = renderer.create(<App />).toJSON();
+    expect(tree).toMatchSnapshot();
   });
 });
