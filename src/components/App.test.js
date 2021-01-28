@@ -1,8 +1,8 @@
 import React from 'react';
+import renderer from 'react-test-renderer';
 import { render, screen, fireEvent } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import App from './App';
-// import renderer from 'react-test-renderer';
 
 describe('Calculator Functionality Test', () => {
   it('should renders text Lets do some math', () => {
@@ -36,5 +36,9 @@ describe('Calculator Functionality Test', () => {
     fireEvent.click(screen.getByText('7'));
     fireEvent.click(screen.getByText('='));
     expect(screen.getByText('56')).toBeTruthy();
+  });
+
+  it('matches the snapshot', () => {
+    const tree = renderer.create(<App />).toJSON();
   });
 });
