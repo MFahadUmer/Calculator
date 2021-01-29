@@ -1,17 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Navbar Componet Test matches the navbar component snapshot 1`] = `
-<div
-  className="quoteContainer"
->
-  <h3
-    className="quoteText"
-  >
-    Mathematics is not about numbers, equations, computations, or algorithms: it is about understanding. –William Paul Thurston
-  </h3>
-</div>
-`;
-
 exports[`Quote Component Test matches the navbar component snapshot 1`] = `
 <div
   className="quoteContainer"
