@@ -24,7 +24,6 @@ it('contains 3 links with different urls', () => {
     </BrowserRouter>,
     container,
   );
-  console.log(screen.getByText('Home').href);
   expect(screen.getByText('Home').href).toBe('http://localhost/');
   expect(screen.getByText('Calculator').href).toBe('http://localhost/calculator');
   expect(screen.getByText('Quote Of The Day').href).toBe('http://localhost/quote');
