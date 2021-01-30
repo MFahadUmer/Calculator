@@ -1,0 +1,26 @@
+.navbarContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+}
+
+.verticalLine {
+  padding: 0 15px;
+}
+
+.links {
+  display: inline;
+  font-size: 18px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.links:hover {
+  color: rebeccapurple;
+}
+
+.title {
+  font-size: 48px;
+}

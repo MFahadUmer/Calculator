@@ -1,0 +1,18 @@
+.homeContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+}
+
+.homeWelcome {
+  margin: 10px 0 20px 0;
+  font-size: 30px;
+}
+
+.homeText {
+  font-size: 28px;
+}
+
+.homeText > p {
+  margin-top: 40px;
+}

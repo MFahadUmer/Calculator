@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`button component tests matches the button component snapshot 1`] = `
+<button
+  className="width25 button"
+  onClick=""
+  style={
+    Object {
+      "backgroundColor": "orange",
+    }
+  }
+  type="submit"
+>
+  5
+</button>
+`;

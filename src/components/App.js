@@ -33,9 +33,14 @@ class App extends Component {
       value = next;
     }
     return (
-      <div className="calculator">
-        <Display calculate={value} />
-        <ButtonPanel clickHandler={this.handleClick} />
+      <div className="calculatorContainer">
+        <div>
+          <p id="appText" className="appText">Let’s do some math!</p>
+        </div>
+        <div className="calculator">
+          <Display calculate={value} />
+          <ButtonPanel clickHandler={this.handleClick} />
+        </div>
       </div>
     );
   }

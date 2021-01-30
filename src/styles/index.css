@@ -1,0 +1,17 @@
+@import url(navbar.css);
+@import url(home.css);
+@import url(quote.css);
+@import url(app.css);
+@import url(display.css);
+@import url(buttonPanel.css);
+@import url(button.css);
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.mainContainer {
+  width: 100vw;
+}
