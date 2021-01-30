@@ -1,0 +1,254 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`button component tests matches the button component snapshot 1`] = `
+<div>
+  <div
+    className="buttonPanel"
+  >
+    <button
+      className="width25 button"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "orange",
+        }
+      }
+      type="submit"
+    >
+      AC
+    </button>
+    <button
+      className="width25 button"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "orange",
+        }
+      }
+      type="submit"
+    >
+      +/-
+    </button>
+    <button
+      className="width25 button"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "orange",
+        }
+      }
+      type="submit"
+    >
+      %
+    </button>
+    <button
+      className="width25 button"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "orange",
+        }
+      }
+      type="submit"
+    >
+      /
+    </button>
+  </div>
+  <div
+    className="buttonPanel"
+  >
+    <button
+      className="width25 button"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "orange",
+        }
+      }
+      type="submit"
+    >
+      7
+    </button>
+    <button
+      className="width25 button"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "orange",
+        }
+      }
+      type="submit"
+    >
+      8
+    </button>
+    <button
+      className="width25 button"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "orange",
+        }
+      }
+      type="submit"
+    >
+      9
+    </button>
+    <button
+      className="width25 button"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "orange",
+        }
+      }
+      type="submit"
+    >
+      X
+    </button>
+  </div>
+  <div
+    className="buttonPanel"
+  >
+    <button
+      className="width25 button"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "orange",
+        }
+      }
+      type="submit"
+    >
+      4
+    </button>
+    <button
+      className="width25 button"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "orange",
+        }
+      }
+      type="submit"
+    >
+      5
+    </button>
+    <button
+      className="width25 button"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "orange",
+        }
+      }
+      type="submit"
+    >
+      6
+    </button>
+    <button
+      className="width25 button"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "orange",
+        }
+      }
+      type="submit"
+    >
+      -
+    </button>
+  </div>
+  <div
+    className="buttonPanel"
+  >
+    <button
+      className="width25 button"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "orange",
+        }
+      }
+      type="submit"
+    >
+      1
+    </button>
+    <button
+      className="width25 button"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "orange",
+        }
+      }
+      type="submit"
+    >
+      2
+    </button>
+    <button
+      className="width25 button"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "orange",
+        }
+      }
+      type="submit"
+    >
+      3
+    </button>
+    <button
+      className="width25 button"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "orange",
+        }
+      }
+      type="submit"
+    >
+      +
+    </button>
+  </div>
+  <div
+    className="buttonPanel"
+  >
+    <button
+      className="width50 button"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "orange",
+        }
+      }
+      type="submit"
+    >
+      0
+    </button>
+    <button
+      className="width25 button"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "orange",
+        }
+      }
+      type="submit"
+    >
+      .
+    </button>
+    <button
+      className="width25 button"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "orange",
+        }
+      }
+      type="submit"
+    >
+      =
+    </button>
+  </div>
+</div>
+`;

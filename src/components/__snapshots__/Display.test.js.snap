@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Display Component Tests matches the snapshot of display component 1`] = `
+<div
+  className="display"
+>
+  <p
+    className="calculateText"
+  >
+    0
+  </p>
+</div>
+`;
